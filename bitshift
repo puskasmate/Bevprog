@@ -1,0 +1,20 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+   int i=1;
+   int seged=0;
+
+   while(i!=0){
+        i<<=1;
+        seged++;
+        cout<<i<<endl;
+
+   }
+   cout<<seged<<". lepes utan lesz 0.\n";
+    return 0;
+}
