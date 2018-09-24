@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int age=0;
+    string first_name;
+    string friend_name;
+    char friend_sex=0;
+
+
+    cout<<"Please enter the name of the person you want to write to!"<<endl;
+    cin>>first_name;
+    cout<<"Enter his/her age!\n";
+    cin>>age;
+
+    if(age <=0 || age >=110){
+        cout<<"You're kidding..."<<endl;
+}
+    cout<<"Please enter another friend's name!"<<endl;
+    cin>>friend_name;
+    cout<<"Please enter "<<friend_name<<"'s sex (m/f)"<<endl;
+    cin>>friend_sex;
+
+
+    cout<<"Dear "<<first_name<<",\nHow are you? I can't wait to see you again."<<endl;
+    cout<<"Have you seen "<<friend_name<<" lately?"<<endl;
+    if (friend_sex=='m'){
+        cout<<"If you see "<<friend_name<<" tell him to call me."<<endl;
+
+    }
+    else if(friend_sex=='f'){
+        cout<<"If you see "<<friend_name<<" tell her to call me."<<endl;
+
+    }
+    cout<<"I hear you just had a birthday and you are "<<age<<" years old."<<endl;
+
+    if(age<12){
+        cout<<"Next year you will be "<<age+1<<"."<<endl;
+
+
+    }
+        if(age == 17){
+        cout<<"Next year you will be able to vote."<<endl;
+    }
+
+
+    if(age>70){
+        cout<<"I hope you are enjoying your retirement."<<endl;
+    }
+
+    cout<<"Yours sincerely, Mate Puskas."<<endl;
+
+    return 0;
+}
